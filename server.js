@@ -5,17 +5,17 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-
+app.use(seeddata());
 // // console.log('app created')
 
-// const {
-//     getCountry,
-//     getDestination,
-//     postItem,
-//     deleteItem
-// } = require("./controller");
+const {
+    getCountries,
+    getDestination,
+    postItem,
+    deleteItem
+} = require("./controller");
 
-app.get('/')
+app.get('/api/seedData')
 // app.post
 // app.delete
 
