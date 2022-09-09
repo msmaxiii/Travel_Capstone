@@ -1,24 +1,25 @@
 const  express = require('express');
 const cors = require('cors');
-const app = express();
 
+const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use(seeddata());
-// // console.log('app created')
 
+// // console.log('app created')
 const {
-    getCountries,
-    getDestination,
-    postItem,
+    getCountry,
+    getmostPopular,
+    getItems,
+    postItems,
     deleteItem
 } = require("./controller");
 
-app.get('/api/seedData')
-// app.post
-// app.delete
-
+app.get('/api/country', getCountry);
+app.get('/api/getmostPopular',getmostPopular);
+app.get('/api/items',getItems);
+app.post('/api/items',postItems);
+app.delete('/api/item/item',deleteItem)
 
 
 

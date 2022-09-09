@@ -13,7 +13,7 @@ const seedData = [
     },
     {
         country:"Asia",
-        most_popular"Maldives,
+        most_popular"Maldives",
         Phuket,
         Hong Kong,
         Bali,
@@ -71,6 +71,7 @@ const seedData = [
        Blue Mountains National Park"
       
     },
+    
     {
         country:"Antarctica",
         most_popular:",
@@ -82,8 +83,8 @@ const seedData = [
         Lemaire Channel,
         Port Lockroy,
         Ross Sea/Ice Shelf"
- },
-]
+ }
+
 module.exports = seedData()
 
 
