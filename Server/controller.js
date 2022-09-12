@@ -1,11 +1,10 @@
-const items =["getItems,postItems,deleteItem "]
-
-
+const items =["getItems,postItems,deleteItem,seedData ,getCountry,getmostPopular"];
+const seedData = require ('./seedData.json')
 
 
 module.exports = {
     getCountry:(req,res) =>{
-        res.status(200).send(country);
+        res.status(200).send(getCountry);
     },
     getmostPopular:(req,res) => {
         res.status(200).send(mostPopular);
@@ -16,7 +15,7 @@ module.exports = {
     postItems:(req,res) =>{
         const { newItem } = req.body;
         items.push(newItem);
-        res.status(200).send(items);
+        res.status(200).send(postItems);
     },
     deleteItem: (req, res) => {
         const { item } = req.params;
@@ -29,7 +28,18 @@ module.exports = {
 
             res.status(200).send(items);
 
-}
+                }
+    },
+    seedData:(req,res) =>{
+        return(
+            then(()=> {
+                console.log("data")
+                res.sendStatus(200)
+            .catch(err => console.log("error",err))
+            }
+            )
+        )
     }
+
 };
     
