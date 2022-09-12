@@ -4,7 +4,7 @@ const seedData = require ('./seedData.json')
 
 module.exports = {
     getCountry:(req,res) =>{
-        res.status(200).send(getCountry);
+        res.status(200).send(seedData);
     },
     getmostPopular:(req,res) => {
         res.status(200).send(mostPopular);

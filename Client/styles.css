@@ -1,5 +1,5 @@
-body {
-    background-color:rgb(168, 168, 219);
+body  {
+    background-color:rgb(120, 181, 206);
   }
   div.gallery {
     margin: 5px;
@@ -28,8 +28,6 @@ body {
  #logo{
    margin-top: 180px;
     
-  
-    
   }
   
   slogan {
@@ -50,11 +48,25 @@ justify-content: space-around;
 header {
     display: inline-flex;
     justify-content: space-between;
+    float: center;
     align-items: center;
     background-position:top left;
     /* background-color: green; */
 } 
 
 h2{
-  float:center;
+  text-align: center;
 }
+
+nav{
+  float:right
+}
+footer {
+    position: fixed;
+     left: 0;
+     bottom: 0;
+    width: 100%;
+     background-color: rgb(55, 0, 255);
+     color: white;
+     text-align: center;
+   }
