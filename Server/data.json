@@ -1,7 +1,7 @@
 
  [{
     
-        "country":"Africa",
+        "continent":"Africa",
         "most_popular":["Serengeti National Park (Tanzania)",
         "Masai Mara National Reserve (Kenya)",
         "Mana Pools National Park (Zimbabwe)",
@@ -12,7 +12,7 @@
         "Egypt"]
     },
     {
-        "country":"Asia",
+        "continent":"Asia",
         "most_popular":["Maldives",
        "Phuket",
         "Hong Kong",
@@ -25,8 +25,8 @@
     },
 
     {
-        "country":"Europe",
-        "most_popluar":["French Riviera, France. Giacomo Augugliaro",
+        "continent":"Europe",
+        "most_popular":["French Riviera, France. Giacomo Augugliaro",
         "Portugal. Light-LabGetty",
         " Swiss Alps, Switzerland",
         "Cotswolds, UK. Peter AdamsGetty ",
@@ -37,7 +37,7 @@
         
     },
     {
-        "country":"North_America",
+        "continent":"North America",
         "most_popular":[" San Francisco",
         "Grand Canyon",
         "Las Vegas",
@@ -48,7 +48,7 @@
         "Washington DC"]
     },
     {
-        "country":"South_America",
+        "continent":"South America",
         "most_popular":["Perito Moreno Glacier, San Cruz Province, Argentina",
        "Atacama Desert, Chile",
         "Rio De Janeiro, Brazil",
@@ -60,11 +60,11 @@
      
         
     },
-    { "country":"Australia",
+    { "continent":"Australia",
      "most_popular":["Daintree Rainforest",
-       "Cable Beach",
-      "The Great Barrier Reef",
-      "Kakadu National Park",
+        "Cable Beach",
+        "The Great Barrier Reef",
+        "Kakadu National Park",
        "Kangaroo Island",
        "Enjoying The Great Ocean Road",
        "Uluru",
@@ -73,7 +73,7 @@
     },
     
     {
-        "country":"Antarctica",
+        "continent":"Antarctica",
         "most_popular":[
         "South Shetland Islands",
         "Antarctic Peninsula",
@@ -85,6 +85,7 @@
        "Ross Sea/Ice Shelf"]
  }
 ]
+
 
 
 

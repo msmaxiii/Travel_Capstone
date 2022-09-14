@@ -1,5 +1,5 @@
 body  {
-    background-color:rgb(120, 181, 206);
+    background-color:rgb(151, 192, 242);
   }
   div.gallery {
     margin: 5px;
@@ -51,11 +51,12 @@ header {
     float: center;
     align-items: center;
     background-position:top left;
-    /* background-color: green; */
+
 } 
 
 h2{
   text-align: center;
+  font-size: 50px;
 }
 
 nav{
@@ -70,3 +71,26 @@ footer {
      color: white;
      text-align: center;
    }
+
+p{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 18px;
+} 
+div{
+  text-align: center;
+}  
+
+  i.hide {
+    display: none;
+  }
+  .hover {
+    display: block;
+  }
+
+  y.hover{
+    display:block
+  }
+  .hide{
+    display:none
+  }

@@ -1,23 +1,27 @@
-const items =["getItems,postItems,deleteItem,seedData ,getCountry,getmostPopular"];
-const seedData = require ('./seedData.json')
+
+const data = require ('./data.json')
 
 
 module.exports = {
-    getCountry:(req,res) =>{
-        res.status(200).send(seedData);
+
+    getDestination:(req,res) =>{
+        const { continent } = req.query
+        for(let i = 0; i <data.length; i++){
+            if (continent === data[i].continent){
+                res.status(200).send( data[i].most_popular);
+                break
+            }
+        }
     },
-    getmostPopular:(req,res) => {
-        res.status(200).send(mostPopular);
+    getMostPopularForm:(req,res) => {
+        res.status(200).send(data);
     },
-    getItems:(req,res) =>{
-        res.status(200).send(getItems);
-    },
-    postItems:(req,res) =>{
+    createDestination:(req,res) =>{
         const { newItem } = req.body;
         items.push(newItem);
         res.status(200).send(postItems);
     },
-    deleteItem: (req, res) => {
+    deleteDestination: (req, res) => {
         const { item } = req.params;
         const index = items.findIndex(e => e === item);
 
@@ -30,7 +34,7 @@ module.exports = {
 
                 }
     },
-    seedData:(req,res) =>{
+    data:(req,res) =>{
         return(
             then(()=> {
                 console.log("data")
