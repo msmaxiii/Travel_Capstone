@@ -1,6 +1,7 @@
 
 const firstNameInput = document.getElementById("fname")
 const lastNameInput = document.getElementById("lname")
+const emailAddressInput = document.getElementById("email")
 const continentSelect = document.getElementById("continent")
 const getMostPopularForm = document.querySelector("#mostPopularForm")
 const destinationResults = document.getElementById ("destinationResults")
@@ -10,6 +11,7 @@ const destinationResults = document.getElementById ("destinationResults")
     evt.preventDefault()
     const fname = firstNameInput.value
     const lname = lastNameInput.value
+    const email = emailAddressInput.value
     const continent = continentSelect.value
 
     axios.get(`http://localhost:8080/api/getDestination?continent=${continent}`)

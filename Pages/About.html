@@ -28,23 +28,28 @@
    <p>Let Traveler's Wander get you started.</p>
    <p> To view most popular destinations fill out the form and click submit.</p>
 </p>
-       
+<script>
+  function emailAddress() {
+    alert("Email sent");
+  }
+  </script>  
 
 <div>
-<!-- <form id="searchForm">
-    <input placeholder="Add destination" />
-    <button>Search</button>
-    <button>Clear</button>
-</form> -->
+
     <br>
     <br>
     <br>
+   
+
   <form id="mostPopularForm">
   <label for="fname">First Name</label>
   <input type="text" id="fname" name="firstname" placeholder="">
 
   <label for="lname">Last Name</label>
   <input type="text" id="lname" name="lastname" placeholder="">
+
+  
+ 
 
   <label for="continent">Continent</label>
   <select id="continent" name="continent">
@@ -56,7 +61,11 @@
     <option value="North America">North America</option>
     <option value="South America">South America</option>
   <input type="submit" value="Submit">
-
+  <br>
+  <br>
+  <label for="email">Email address</label>
+  <input type="text" id="email" name="email address" placeholder="">
+  <button onclick="email()">Email results</button>
 
 </form>
 

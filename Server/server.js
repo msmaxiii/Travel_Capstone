@@ -9,7 +9,7 @@ app.use(express.json());
 
 console.log('app created')
 
-const{ getDestination,
+const { getDestination,
     createDestination,
     deleteDestination 
 } = require("./controller");

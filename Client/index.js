@@ -12,7 +12,9 @@ for (let i = 0; i < continents.length; i++){
 }
 for (let y = 0; y < continents.length; y++){
     continents[y].addEventListener("mouseout",(evt)=>{
-       const continent = evt.target.id
-       console.log(continent)
+       const continents = evt.target.id
+       desc.classList.add("hover")
+       desc.classList.remove("hide")
+       console.log(continents)
     })
 }
