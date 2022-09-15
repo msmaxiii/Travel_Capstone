@@ -11,10 +11,12 @@ for (let i = 0; i < continents.length; i++){
     })
 }
 for (let y = 0; y < continents.length; y++){
-    continents[y].addEventListener("mouseout",(evt)=>{
-       const continents = evt.target.id
+    continents[y].addEventListener("mouseleave",(evt)=>{
+       const continent = evt.target.id
+       const desc = document.getElementById(`desc-${continent}`)
        desc.classList.add("hover")
        desc.classList.remove("hide")
-       console.log(continents)
+      
+       console.log(desc)
     })
 }

@@ -4,8 +4,12 @@ This travel app is designed for users who want to travel and don't know where to
 
 Clone the repo
 git clone https://github.com/msmaxiii_/Travel_Capstone.git
+
 Install NPM packages
 npm install
 npm start
 Runs the app in the development mode.
+
 Open http://localhost:8080 to view it in your browser.
+
+Tech stack used in this project is Node, Express, HTML, CSS and JS
