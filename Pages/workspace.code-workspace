@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Assessments/fs-skills-3-msmaxiii"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Travel_Capstone"
+	}
+}

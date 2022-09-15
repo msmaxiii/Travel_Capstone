@@ -2,6 +2,8 @@
 const firstNameInput = document.getElementById("fname")
 const lastNameInput = document.getElementById("lname")
 const continentSelect = document.getElementById("continent")
+const emailAddressInput = document.getElementById("email")
+const form = document.querySelector('#email');
 const getMostPopularForm = document.querySelector("#mostPopularForm")
 const destinationResults = document.getElementById ("destinationResults")
 
@@ -27,12 +29,14 @@ const destinationResults = document.getElementById ("destinationResults")
         console.log(err);
 
    
-})
+    })
+ }
 
-
+function handleSend(evt) {
+	evt.preventDefault();
+	
+	alert('Email sent');
+    
 }
- 
-
-
+form.addEventListener('submit', handleSend);
 getMostPopularForm.addEventListener('submit',getDestination)
- 
